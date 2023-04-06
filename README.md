@@ -18,7 +18,7 @@ This is a cost optimized version of the original LumenPnP Feeders by
   There are very few 470uF 10V capable caps available in the specified package. The 470uF cap
   is also very overspecd, 100uF should be totally sufficient for the application. (The original
   value probably got copied straight from the datasheet example schematic.)
-- **Countersinks -> [24882 solderable standoffs](digikey.com/en/products/detail/keystone-electronics/24882/9921841)**  
+- **Countersinks -> [24882 solderable standoffs](https://www.digikey.com/en/products/detail/keystone-electronics/24882/9921841)**  
   Getting the countersinks done by the PCB manufacturer is probably way to expensive,
   especially for low qty orders. The standoffs would add a cost of ~2.5€ per board.
   Alternatively it might be possible to use a 3D print with standard M3 nuts/heat set inserts,

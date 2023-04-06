@@ -1,4 +1,31 @@
-# LumenPnP Feeders
+# Low Co$t Feeder
+
+This is a cost optimized version of the original LumenPnP Feeders by
+[Opulo](https://www.opulo.io/).
+
+## Warning: This is still highly experimental, PCBs haven't been ordered/tested at all yet.
+
+### Changes:
+
+- **3.3V -> 5V mcu/logic supply**  
+  The original RS485 transceiver costs 6-7€ in Qty 10, alternative parts that can be powered
+  by 3.3V start at 3-4€. Similar 5V powered parts are already available for ~1€.
+- **STM32F031 -> ATmega328P**  
+  This is just the first MCU I could think of that's 5V compatible. It has just enough IO, is
+  available in similar packages (TQFP and QFN), is similarly priced and should be able to run
+  the photon firmware just fine.
+- **470uF -> 100uF buck converter output capacitor**  
+  There are very few 470uF 10V capable caps available in the specified package. The 470uF cap
+  is also very overspecd, 100uF should be totally sufficient for the application. (The original
+  value probably got copied straight from the datasheet example schematic.)
+- **Countersinks -> [24882 solderable standoffs](digikey.com/en/products/detail/keystone-electronics/24882/9921841)**  
+  Getting the countersinks done by the PCB manufacturer is probably way to expensive,
+  especially for low qty orders. The standoffs would add a cost of ~2.5€ per board.
+  Alternatively it might be possible to use a 3D print with standard M3 nuts/heat set inserts,
+  glued to the PCB in their place.  
+  Adding the countersinks to the holes yourself is still possible too.
+
+## LumenPnP Feeders
 The LumenPnP Feeders are open source pick and place feeders to aid in [Mid-Scale Manufacturing](https://stephenhawes.com/level-2-manufacturing/).
 
 ![LumenPnP Feeders](img/hero-alpha.png)
@@ -9,8 +36,8 @@ The LumenPnP Feeders run [Photon](https://github.com/photonfirmware/photon), an 
 
 The development process is being cataloged in a series of videos. A playlist of these can be found [here](https://www.youtube.com/playlist?list=PLIeJXmcg1baLBz3x0nCDqkYpKs2IWGHk4).
 
-## Documentation
+### Documentation
 Feeder user documentation can be found on the [Opulo Docs Page](https://docs.opulo.io/). Open Hardware Assembly instructions can be found at [ohai.opulo.io](https://ohai.opulo.io/).
 
-## Community
+### Community
 Discussion about the project happens on the [STR Discord server](https://discordapp.com/invite/TCwy6De)!

@@ -25,8 +25,8 @@ This is a cost optimized version of the original LumenPnP Feeders by
   glued to the PCB in their place.  
   Adding the countersinks to the holes yourself is still possible too.
 - **Option to bypass the onboard SMPS** (thanks @FL140 for the idea!)  
-  Added a jumper to bypass the onboard SMPS for **users of +12V systems**. This should save
-  1-2€ in components and might also have some other benefits, like better EMC.  
+  Added a 0R resistor to bypass the onboard SMPS for **users of +12V machines**. This should
+  save 1-2€ in components and might also have some other benefits, like better EMC.  
   **If this option is being used, the DRV8837 motor drivers should be replaced with +12V
   tolerant ones, for example DRV8220.**
 

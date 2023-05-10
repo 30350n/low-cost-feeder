@@ -10,10 +10,11 @@ This is a cost optimized version of the original LumenPnP Feeders by
 - **3.3V -> 5V mcu/logic supply**  
   The original RS485 transceiver costs 6-7€ in Qty 10, alternative parts that can be powered
   by 3.3V start at 3-4€. Similar 5V powered parts are already available for ~1€.
-- **STM32F031 -> ATmega328P**  
-  This is just the first MCU I could think of that's 5V compatible. It has just enough IO, is
-  available in similar packages (TQFP and QFN), is similarly priced and should be able to run
-  the photon firmware just fine.
+- **STM32F031 -> ATmega328PB**  
+  The ATmega328P is just the first MCU I could think of that's 5V compatible and has just enough
+  IO, is available in similar packages (TQFP and QFN), is similarly priced and should be able to
+  run the photon firmware just fine. The ATmega328PB is not a drop in replacement, but has extra
+  features (like UUID support) and is even cheaper.
 - **470uF -> 100uF buck converter output capacitor**  
   There are very few 470uF 10V capable caps available in the specified package. The 470uF cap
   is also very overspecd, 100uF should be totally sufficient for the application. (The original

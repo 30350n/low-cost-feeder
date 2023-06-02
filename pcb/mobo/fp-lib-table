@@ -1,7 +1,4 @@
 (fp_lib_table
   (version 7)
-  (lib (name "index")(type "KiCad")(uri "E:/projects/lumenpnp/lumenpnp/lib/kicad/index.pretty")(options "")(descr ""))
-  (lib (name "feeder")(type "KiCad")(uri "E:/projects/lumenpnp/feeder/lib/kicad/feeder.pretty")(options "")(descr ""))
-  (lib (name "mfg")(type "KiCad")(uri "/Users/stephen/mfg/lib/kicad/mfg.pretty")(options "")(descr ""))
-  (lib (name "kikit")(type "KiCad")(uri "E:/projects/lumenpnp/lumenpnp/lib/kicad/kikit.pretty")(options "")(descr ""))
+  (lib (name "feeder")(type "KiCad")(uri "${KIPRJMOD}/../../lib/kicad/feeder.pretty")(options "")(descr ""))
 )

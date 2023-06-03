@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name "feeder")(type "KiCad")(uri "/Users/stephen/feeder/lib/kicad/feeder.pretty")(options "")(descr ""))
+  (version 7)
+  (lib (name "feeder")(type "KiCad")(uri "${KIPRJMOD}/../../lib/kicad/feeder.pretty")(options "")(descr ""))
 )
